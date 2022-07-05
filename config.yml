@@ -1,0 +1,34 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+#recipe: default.v1
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: fr
+  
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+    case_sensitive: False
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true
+  - name: EntitySynonymMapper
+  - name: "CRFEntityExtractor"
+  - name: RegexEntityExtractor
+    case_sensitive: False
+    use_lookup_tables: True
+
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    batch_size: 50
+    max_training_samples: 300
+ 

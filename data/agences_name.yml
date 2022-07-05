@@ -1,0 +1,15 @@
+version: "3.1"
+
+nlu:
+- lookup: agence
+  examples: |
+     - Lyon
+     - Nantes
+     - Bordeaux
+     - Paris
+     - Lille
+     - Brest
+     - Montreal
+     - Grenoble
+     - Rennes
+     - Singapore
