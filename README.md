@@ -1,7 +1,7 @@
-# Zenika SkillZ and Platon chatbot
+# Zenika Chatbot
 
 ## Project's description:
-This project's goal is to act as a link between clients and employees looking to sharpen their skills on different domains and in one of Zenika's french agencies. Users can ask for information to the bot and it will answer them by giving the email adress of available trainers.
+This project's goal is to act as a link between clients and employees looking to sharpen their skills on different domains and in one of Zenika's french agencies. Users can ask for any to the bot and it will answer them with an appropriate answer when possible.
 
 The framework used to program this bot is RASA. All AI matters as well as the bot's training are handled by RASA when executing the command `rasa train` after deciding and/or changing how you want your bot to react. You can choose between various methods to train the bot as well as how it reads and processes the key words in your dialogue.
 
