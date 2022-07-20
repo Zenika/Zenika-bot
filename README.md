@@ -3,19 +3,20 @@
 ## Project's description:
 This project's goal is to act as a link between clients and employees looking to sharpen their skills on different domains and in one of Zenika's french agencies. Users can ask for information to the bot and it will answer them by giving the email adress of available trainers.
 
-The framework used to program this bot is RASA. All AI matters as well as the bot's training are handled by RASA when executing the command `rasa train` after deciding and or/changing how you want your bot to react. You can choose between various methods to train the bot as well as how it reads and processes the key words in your dialogue.
+The framework used to program this bot is RASA. All AI matters as well as the bot's training are handled by RASA when executing the command `rasa train` after deciding and/or changing how you want your bot to react. You can choose between various methods to train the bot as well as how it reads and processes the key words in your dialogue.
 
 
 ## How to install and run the project:
-It is first recomended that you create a virtual environment to run the bot. To create one, you need Anaconda,  and then to run 
+It is first recomended that you create a virtual environment to run the bot. To create one, you need Anaconda, which can be downloaded [here](https://www.anaconda.com/products/distribution). Once done, you can now run the following command to create it. 
 
-```
-conda create -n your_env_name python=x.x anaconda 
-```
+1. Run `conda create -n your_env_name python=x.x anaconda` and `conda activate venv_name`, where your_env_name is the name of your virtual environment and x.x is the python version you want to work on (RASA requires python 3.7 or python 3.8)
 
-To run this project, you will need to download the python module RASA. Run the following command to do so: `pip install rasa` or `pip3 install rasa` for Python3.
+2. Run `conda install pip`. This will install pip to your virtual environnement's directory.
 
-Once installed, two terminal windows will be needed: The first one will run `rasa run actions` to allow custom actions to be done by the bot, and a second one will run `rasa shell` used to start a dialogue with the bot.
+3. Install new packages by doing `pip3 install package_name`. `pip3 install rasa` is obviously needed.
+This should now successfully install packages using that virtual environment's pip!
+
+4. Once installed, two terminal windows will be needed: The first one will run `rasa run actions` to allow custom actions to be done by the bot, and a second one will run `rasa shell` used to start a dialogue with the bot.
 
 Additionally, after each change in a file that is not actions.py, you will need to run `rasa train` for the bot to take into account your latest changes.
 
