@@ -1,0 +1,62 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - slt
+    - hi
+    - Bonjour
+    - Bonsoir
+    - hey
+
+- intent: goodbye
+  examples: |
+    - A plus
+    - Au revoir
+    - bonne journée
+    - bonne soirée
+    - bye
+    - A demain
+    - Bon fin d'après midi
+    - bye bye
+
+- intent: affirm
+  examples: |
+    - Ok
+    - oui
+    - tout à fait
+    - D'accord
+    - Dac
+    - correct
+
+
+- intent: ask_for_contact_trainer
+  examples: |
+    - Je cherche un formateur [Angular](skill)
+    - un formateur en [Cloud](skill) svp 
+    - Qui est la personne la plus compétente en [Apache Kafka](skill)
+    - Un contact pour apprendre [C++](skill)
+    - formateur [java](skill) à [Lille](agence)?
+    - Qui peut m'aider en [jira](skill)
+    - J'ai un problème [github](skill)
+    - Qui parle [italien](skill) couramment ?
+    - [C#](skill)
+    - formateur [java 8](skill) ?
+    - Est ce qu'il y a un collaborateur fort en [aws](skill) à l'agence de [Nantes](agence)
+    - Une réference [C++](skill) à [Paris](agence)?
+    - Qui peut me former à [Singapore](agence) en [kubernetes](skill) ?
+    - formateur svp
+    - à la recherche d'un formateur
+    - je cherche quelqu'un pour me former
+    - formateur
+    - je voudrais un formateur [anglais](skill)
+    - Qui sont les formateurs à [Bordeaux](agence)
+    - Je cherche une formation [SOFA](skill)
+
+
+- intent: bot_challenge
+  examples: |
+    - est ce que tu es un bot ?
+    - est ce que tu es un etre humain ?
+    - est ce que je parle avec un bot?
+    - est ce que je parle avec un être humain?

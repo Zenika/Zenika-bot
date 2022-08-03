@@ -1,0 +1,586 @@
+version: "3.1"
+
+nlu:
+- lookup: skill
+  examples: |
+     - micronaute
+     - angular
+     - apache spark
+     - backbonejs
+     - ansible
+     - apache kafka
+     - aws
+     - c#
+     - azure 
+     - c++
+     - clean architecture
+     - clean code
+     - cloud
+     - c
+     - continuous deployment
+     - continuous integration
+     - datadog
+     - ddd
+     - devops
+     - docker
+     - gcp
+     - git
+     - github
+     - go
+     - infrastructure as code
+     - intellij idea
+     - java 8
+     - jenkins
+     - jira
+     - junit 5
+     - kafka
+     - kafka streams
+     - kubernetes
+     - linux
+     - mockito
+     - mongodb
+     - mysql
+     - openstack
+     - ovhcloud
+     - packer
+     - postgresql
+     - python 3
+     - redis
+     - spring
+     - sql
+     - tdd
+     - terraform
+     - traefik
+     - vagrant
+     - vault
+     - vim
+     - vscode
+     - coaching devops
+     - formation
+     - circleci
+     - coaching craft
+     - flyway
+     - gestion de projet
+     - gestion d'équipe
+     - hadoop
+     - maker
+     - normalisation
+     - php
+     - prometheus
+     - reactjs
+     - sonar
+     - spring boot
+     - vuejs
+     - wordpress
+     - cucumber
+     - leafletjs
+     - node.js
+     - react native
+     - typescript
+     - agilité
+     - ci cd
+     - code review
+     - craftsmanship
+     - maven
+     - nosql
+     - rest
+     - scrum
+     - zeplin
+     - accelerate
+     - activemq
+     - agile coaching
+     - anglais
+     - apache pulsar
+     - bpmn
+     - camel
+     - cassandra
+     - clever cloud
+     - clojure
+     - cloud functions
+     - communication non violente
+     - confluence
+     - consulting
+     - cqrs
+     - design patterns
+     - elasticsearch
+     - elk
+     - enterprise architecture 
+     - event sourcing
+     - extreme programming
+     - facilitation
+     - firebase
+     - github actions
+     - gitlab ci
+     - gradle
+     - groovy
+     - haskell
+     - hibernate
+     - html
+     - java
+     - javascript
+     - jpa
+     - jsf
+     - jsp
+     - jvm
+     - kafka ops
+     - kanban
+     - keycloak
+     - kotlin
+     - ksqldb
+     - ktor
+     - lean
+     - lean startup
+     - lisp
+     - miro
+     - mob programming
+     - mural
+     - neo4j
+     - node
+     - pair programming
+     - problem solving
+     - programmation fonctionnelle
+     - quarkus
+     - refactoring
+     - scala
+     - spring batch
+     - spring cloud
+     - spring data
+     - spring reactor
+     - spring security
+     - tech lead
+     - tests
+     - unity
+     - zoom
+     - argocd
+     - container
+     - aws sagemaker
+     - azure machine learning
+     - bdd
+     - fastlane
+     - flutter
+     - google analytics 
+     - graphql
+     - ios
+     - mockk
+     - nestjs
+     - netlify
+     - nextjs
+     - python
+     - ruby
+     - sbt
+     - swagger
+     - swiftui
+     - vert.x
+     - xcode
+     - bash
+     - kubernetes admin
+     - elastic observability
+     - junit
+     - macos
+     - accessibilité
+     - adobe xd
+     - design
+     - design sprint
+     - design thinking
+     - figma
+     - invision
+     - klaxoon
+     - motion design
+     - serious game
+     - ui
+     - liquibase
+     - vuejs 2
+     - vuejs 3
+     - angularjs
+     - bootstrap
+     - css
+     - deno
+     - expressjs
+     - frontend
+     - micro frontend
+     - owasp
+     - pwa
+     - rollup
+     - rust
+     - sass
+     - serverless
+     - sveltejs
+     - webassembly
+     - web components
+     - webpack
+     - espagnol 
+     - joomla
+     - jquery
+     - prince2
+     - product management
+     - product owner
+     - safe
+     - scaled agile
+     - seo
+     - sketch
+     - typeform
+     - ux
+     - web flow
+     - rxjs
+     - pandas
+     - angular 8+
+     - chaos engineering
+     - chef
+     - coaching agile
+     - data science
+     - dataviz
+     - devsecops
+     - green it
+     - heroku
+     - java 7
+     - jest
+     - management 3.0
+     - molecule
+     - psychologie positive
+     - puppet
+     - rabbitmq
+     - sécurité
+     - svn
+     - uml
+     - dialogflow
+     - tensorflow
+     - meilisearch
+     - cynefin
+     - scrumban
+     - scrum master
+     - site reliability engineering
+     - dart
+     - expo
+     - pentest
+     - vps
+     - co-design
+     - symfony
+     - process com
+     - python 2
+     - recrutement
+     - thanos
+     - transact-sql
+     - android
+     - bikablo
+     - design system
+     - framer
+     - storybook
+     - zero height
+     - angular 7
+     - coaching professionnel
+     - dynatrace
+     - facilitation graphique
+     - fluentbit
+     - grafana
+     - intégration continue
+     - istio
+     - kubernetes dev
+     - service mesh
+     - solr
+     - helm
+     - k3s
+     - elastic stack
+     - spark
+     - plantuml
+     - angular 8
+     - angular 9
+     - electron
+     - http4k
+     - .net
+     - nexus
+     - objective-c
+     - openshift
+     - rancher
+     - swift
+     - bidon
+     - ia
+     - ionic 6
+     - vite
+     - atdd
+     - play 2
+     - rxjava
+     - droneci
+     - less
+     - nightwatch
+     - playwright
+     - ionic
+     - machine learning
+     - .net core
+     - quasar
+     - jamstack
+     - marvel
+     - r
+     - microsoft access
+     - gatsbyjs
+     - lego serious play
+     - liberating structures
+     - mercurial
+     - salt(stack)
+     - velero
+     - graalvm
+     - cypress
+     - fastify
+     - perl
+     - adobe experience manager aem
+     - d3js
+     - italien
+     - svg
+     - protractor
+     - coldfusion
+     - d.i.s.c.
+     - pnl
+     - solid
+     - pmi
+     - analyse transactionnelle
+     - capital psychologique
+     - executive coaching
+     - host leadership
+     - innovation game
+     - résilience
+     - axure
+     - vba
+     - solution focus
+     - system thinking 
+     - xray
+     - kotlin multiplatform
+     - rxswift
+     - nuxtjs
+     - account management
+     - elixir
+     - elm
+     - stenciljs
+     - fusion 360
+     - kubespray
+     - keras
+     - litelement
+     - lucene
+     - scikit-learn
+     - dvc
+     - pytorch
+     - emberjs
+     - vhdl
+     - webrtc
+     - appreciative inquiry
+     - pijul
+     - snowpack
+     - catchpoint
+     - concept app
+     - czech
+     - remix
+     - stylus
+     - kotest
+     - micronaut
+     - strikt
+     - polymer
+     - kubeflow
+     - mlflow
+
+     - BOOTCAMP ZKA
+     - Elastic Essential
+     - formation KUBERBASIC / pour ste VIACCESS
+     - HELM
+     - Outils de la CI/CD
+     - GR1 - Coaching PM - J1 - CEGID
+     - GITLAB AVANCE POUR ORANGE
+     - Kubernetes Déployer et Exploiter vos applications
+     - coaching pour ADEO , suite formation PM de juin
+     - JENKINS
+     - GitlabCI CAGIP
+     - arkeagile PO
+     - AWX USER
+     - Coaching PM - J2 - Cegid
+     - design thinking adapté par Nicolas COUPE
+     - Rappel Kubernetes Application Developer
+     - Workshop Kafka
+     - Bootcamp
+     - KUBER basique sur 2 jours
+     - AWX ADMIN
+     - Kibana 
+     - Déploiement avancée,
+     - coaching SUITE FORMATION PM pour ADEO du 9 10 juin 
+     - Coaching PM - J1 - Cegid
+     - Industrialisation avec Helm/Kustomize
+     - accompagnement en distanciel suite formation MONGO du 3 mai
+     - SOFA ARKEA
+     - Coaching PM - J1 - CEGID
+     - Spécialisation pour les Product Owner et les designers + Spécialisation pour les développeurs et les architectes
+     - GIT LAB Avancé
+     - Google Cloud - From Data to Insights
+     - ECO CONCEPTION
+     - ANSIBLE DEBUTANT
+     - cours particulier JAVADEB sur 5j au lieu de 4J
+     - GIT INFRA AS CODE
+     - 1 J prépa formation projet CNIEG session  ID 1062499
+     - Prépa formation GIT+ INFRASTRUCTURE A CODE
+     - spécifique KIBANA 
+     - Custom Kubernetes Application Developer
+     - HELM
+     - Google Cloud Big Data and ML Fundamentals
+     - specifique MOOGO préparé par L AURENT TARDIF
+     - prépa spécifique KIBAN correspondant session 10844921
+     - 6 J prépa formation projet CNIEG session  ID 1062499
+     - Prépa formation F10662499-ZNK
+     - GitlabCI CAGIP
+     - (J3 - Formation Eco conception pour les PO / les designers / les devs / les archi)
+     - Gitlab
+     - Prépa payant MONGO ID session 10736507
+     - CONTINUOUS INTEGRATION
+     - Prépa formation MONGO session 10736507
+     - 1/2 jour focus ECO ARCH formtion madebyzka
+     - kub admin en anglais
+     - prépa correspondant session 10776626
+     - Prépa payante GITLAB  session N° 10696047
+     - ARKEAGILE SCRUM MASTER
+     - product management arkeagile
+     - Café Technique CURSUS CI/CD
+     - préparation facturée /ref session 10026070
+     - Initiation Agile (ARKEAGILE)
+     - Networking avec Google Cloud
+     - atelier git lab (rattrapage gratuit) 
+     - Découverte de l'Agilité et du principal framework associé SCRUM
+     - Security in Google Cloud
+     - (SOFA)
+     - initiation agile ARKEAGILE
+     - Prépa Eco conception BNP PF
+     - Zenbox - Introduction à l'éco-conception
+     - Initiation agile Financo
+     - Eco conception pour les PO et les designers 
+     - Coaching Groupama
+     - CAFE TECHNIQUE ANSIBLE
+     - Agile discovery
+     - equipier agile
+     - AWX  ADMIN
+     - Workshop  REACT - "LES TESTS"
+     - react avancé 
+     - spécifique " garantir le suucèsproduit"
+     - Prépa formaiton correspondant ID9774810
+     - cours particulier JAVADEV sur 3j au lieud e4J
+     - INITIATION AU CRAFTSMANSHIP - SQUAD 1
+     - Formation spécifique PM suite projet CEGID ; focus Process et Outils
+     - CAFE TECHNIQUE KUBENETES
+     - Accompagnement Craft
+     - ORANGE GITLAB ORANGE GITLAB Avancé)
+     - (F10066132-ZNK - journée prépa)
+     - INITIATION AU CRAFTSMANSHIP - SQUAD 2
+     - Docker
+     - Architecture Microservices
+     - BUILD CRAFT
+     - Prépa formaiton correspondant ID9774650
+     - Officielle Google - Logging and Monitoring
+     - INITIATION AU CRAFTSMANSHIP - SQUAD 3
+     - SENSIBILISATION AU CRAFTSMANSHIP - SQUAD 3
+     - AWX UTILISATEUR
+     - SQUAD 3, avant formation
+     - SQUAD 1
+     - spécifiQUE PO /prépa 1 J
+     - prepa 1 j de la PO ID 9652450
+     - SENSIBILISATION AU CRAFTSMANSHIP - SQUAD 2
+     - SENSIBILISATION AU CRAFTSMANSHIP - SQUAD 1
+     - gitlab 1 jr
+     - Préparation Management 3.0 / BNP Suisse
+     - Forfait préparation formation Banque du Maroc
+     - Recap Kubernetes
+     - Forfait preparation
+     - SQUAD 1, avant formation
+     - Creation support de cours specifique ORANGE GITLAB Avancé
+     - Préparation formation AWX
+     - Préparation Parcours DevOps pour Allianz
+     - WORSHOP KAFKA
+     - Equipier agile
+     - Découverte Agile sur 1/2 J
+     - Seminaire manager Oodrive
+     - (Prépa 1/2 journée F9171003-ZNK)
+     - prepa
+     - Delivery agile avec SCRUM
+     - React avancé
+     -  Kubernetes Déployer et Exploiter vos applications (Formation sur mesure)
+     - PRÉPARATION FORMATION CRAFT POUR CATS
+     - Découverte de l'agilité
+     - NgRx
+     - GIT
+     - Cours Particulier VueJS
+     - Préparation REACT AVANCÉE
+     - prépa examen certification PSPO pur KPMG
+     - Préparation formation SCALA du 24/11
+     - atelier conseil DESIGN SPRINT
+     - Voir BRICE si evenement interne ou externe
+     - prepa formation PROG AV  session N°9248883
+     - Préparation formation PM CEGID - F9281610-ZNK
+     - specifique DEVOPS sur 1 jour
+     - formation spécifique  DEVOPS sur 1 j
+     - sensibilisation au craft pour les non déveoppeurs
+     - 1 j de prépa facturée pour session ID 8656387
+     - formation TYPESCRIPT sur 3 jours
+     - préparation 1,5 j de la formation DEVOSP du 20 oct
+     - Spark
+     - CAFÉ TECHNIQUE GITLAB
+     - Préparation de la formation SENSIBILISATION CRAF pour BOUYGUES 
+     - Préparation Café technique
+     - Les Koans, un chemin pour apprendre un nouveau langage de programmation
+     - Domain Driven Design
+     - COACHING FORMATION MANAGEMENT 3.0 +1 BOUYGUES TELECOM
+     - Introduction au Mob Programming pour les développeurs
+     - Introduction au Mob Programming pour les non développeurs
+     - Préparation Learning Week
+     - Spécifique DEVOPS
+     - Préparation formation DDD
+     - formation DEVOPOS sur 1 JOUR 
+     - Post Intra PO spécifique (validation des acquis)
+     - Découverte agilité
+     - vernis technique devops
+     - ABORDER SEREINEMENT LE CHANGEMENT
+     - GITLAB CI 1jr
+     - suite formation spécifique DEV SECU
+     - 1 jour sur DEV SECU formation spécifique 
+     - TEST Automatisé adapté pr BOUYGUES
+     - Préparation payante BOUYGUES  liée à ID 8564239
+     - socle arkea
+     - spécifique AGILE Découverte 1 j
+     - kub (+ 2 jours de prépa vendus) 
+     - (Prépa formation Equipier agile
+     - présentation ECO CONCEPTION pour  GROUPE ROCHER
+     - JAVA + ANGULAR
+     - formation facilitation graphique
+     - CLOUD COMPUTING
+     - facilitation graphique sur 2 matinées
+     - Conception formation APEC
+     - SCRUM PAR LA PRATIQUE
+     - Java / test auto
+     - Solution focus
+     - Formation Java Débutant accélérée
+     - Intra PO spécifique
+     - Atelier préparation à la formation PO OCEA
+     - FAUT-IL AVOIR PEUR DU CHANGEMENT
+     - Elastic
+     - SoFA (arkea)
+     - CAFE TECHNIQUE KUBERNETES
+     - Atelier préparation à la  formation PO OCEA
+     - ACCOMPAGNEMENT MANAGEMENT - TORDET-MAES Vanessa 
+     - spécifique KUBERNETES Sécurité
+     - MANAGELENT 3.0 +1 +1
+     - SOFA arkea
+     - Python
+     - Gestion de projets
+     - intra adapté sur LEAN START UP
+     - intra docker essentials + swarm (2 jrs) 
+     - KUBERNETES @CAGIP
+     - Préparation ref projet Ste catie
+     - Elastick Stack
+     - Product Owner
+     - Accesibilité pour les dev
+     - 6eme demie journée KUBERDEV
+     - Elastic Jour 1/5
+     - vue custom 2 jrs
+     - Rôles et Responsabilité dans les équipe DevOps  - Du Dev pour les Ops
+     - Rôles et Responsabilité dans les équipe DevOps - DU OPS POUR LES DEVS
+     - Rôles et Responsabilité dans les équipe DevOps  (Tronc commun)
+     - Rôles et Responsabilité dans les équipe DevOps (Tronc Commun) 
+     - ATELIER AVANT FORMATION KAFKA ADM
+     - Atelier avant custom formation Kubernetes developer @CAGIP
+     - SOFA
+     - speed training AWS réservé ZKA 
+     - COMMENT APPLIQUER L'AGILITE A L'ENV. MATERIEL?
+     - FAIRE VIVRE SCRUM
+     - Socle Front Arkea
+     - Kotlin Avancée
+     - INTRODUCTION A L'AGILITE

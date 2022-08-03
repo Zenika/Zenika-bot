@@ -1,0 +1,126 @@
+version: "3.1"
+
+stories:
+
+- story: ask for Angular trainer
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "angular"
+  - action: action_trainer_search
+
+- story: ask for C trainer
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "c"
+  - action: action_trainer_search
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask for git trainer
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "git"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: ask for kafka trainer
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "kafka"
+  - action: action_trainer_search
+
+- story: ask for hadoop trainer in Brest
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "hadoop"
+    - agence: "Brest"
+  - action: action_trainer_search
+
+- story: ask for Devops trainer and  Typescript trainer
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Devops"
+  - action: action_trainer_search
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Typescript"
+  - action: action_trainer_search
+
+
+- story: ask for Devops trainer and  Typescript trainer
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Devops"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Typescript"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+
+- story: ask for spring trainer and Kafka trainer in Nantes
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Spring"
+    - agence: "Nantes"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Kafka"
+    - agence: "Nantes"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+
+- story: ask for jira trainer  in Rennes
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "Jira"
+    - agence: "Rennes"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+
+- story: ask for wordpress trainer
+  steps:
+  - intent: ask_for_contact_trainer
+    entities:
+    - skill: "wordpress"
+  - action: action_trainer_search
+  - intent: affirm
+  - action: utter_affirm
+  - intent: goodbye
+  - action: utter_goodbye
+ 
+- story: ask for trainer
+  steps: 
+  - intent: ask_for_contact_trainer
+  - action: action_trainer_search

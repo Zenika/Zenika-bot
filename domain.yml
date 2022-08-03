@@ -1,0 +1,54 @@
+version: "3.1"
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - ask_for_contact_trainer
+    #use_entities:
+    #  - skill
+  - bot_challenge
+
+entities:
+  - skill
+  - agence
+slots:
+  skill:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: skill
+  agence:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: agence
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_affirm
+  - utter_iamabot
+  - action_trainer_search
+  #- action_reset_slot
+
+
+responses:
+  utter_greet:
+  - text: "Bonjour, comment puis-je vous aider? "
+
+  utter_goodbye:
+  - text: "Au revoir"
+  
+  utter_ask_for_trainer:
+  - text: " Vous pouvez contacter M/ Mme X sur son mail xyz@zenika.com {skill}"
+
+  utter_affirm:
+  - text: "Merci"
+
+  utter_iamabot:
+  - text: "Je suis le bot Zenika"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
