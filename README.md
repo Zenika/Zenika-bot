@@ -47,3 +47,6 @@ The _domain.yml_ file contains every intent the user can have, the entities the 
 More importantly, the _config.yml_ file is were the training algorithms and their parameters are, as well as the *pipelines*, which are tokenizers or featurizers that help the bot recognize specific words and behaviors.
 
 Lastly, the _actions.py_ file is were all custom actions are programed. It reads the _.csv_ files of the database and prepares answers accordingly to what it understood and has as informations.
+
+
+Some RASA Documentation (here)[https://rasa.com/docs/rasa/]
