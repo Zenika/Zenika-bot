@@ -49,4 +49,4 @@ More importantly, the _config.yml_ file is were the training algorithms and thei
 Lastly, the _actions.py_ file is were all custom actions are programed. It reads the _.csv_ files of the database and prepares answers accordingly to what it understood and has as informations.
 
 
-Some RASA Documentation (here)[https://rasa.com/docs/rasa/]
+Some RASA Documentation [here](https://rasa.com/docs/rasa/)
