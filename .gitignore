@@ -1,6 +1,6 @@
 .rasa
-venv
-venvRasa
+venv/
+venvRasa/
 bdd
 models
 venvRasa/lib
