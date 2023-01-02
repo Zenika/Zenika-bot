@@ -20,7 +20,6 @@ stories:
     - skill: "c"
   - action: action_trainer_search
   - intent: goodbye
-  #- action: utter_goodbye
   - action: action_act_restarted
 
 
@@ -36,7 +35,6 @@ stories:
   - intent: affirm
   - action: utter_affirm
   - intent: goodbye
-  #- action: utter_goodbye
   - action: action_act_restarted
 
 - story: greet
@@ -122,6 +120,5 @@ stories:
   - intent: affirm
   - action: utter_affirm
   - intent: goodbye
-  #- action: utter_goodbye
   - action: action_act_restarted
  
