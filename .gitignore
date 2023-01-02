@@ -3,3 +3,9 @@ venv
 venvRasa
 bdd
 models
+.env
+.venv
+.venvRasa
+venvRasa/
+env/
+venv/
