@@ -5,4 +5,4 @@ bdd
 models
 venvRasa/lib
 **/venvRasa
-
+*.so
