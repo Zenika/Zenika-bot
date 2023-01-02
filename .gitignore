@@ -1,4 +1,5 @@
 .rasa
+.vscode
 venv/
 venvRasa/
 bdd
