@@ -5,7 +5,8 @@ rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
-  - action: utter_goodbye
+  #- action: utter_goodbye
+  - action: action_act_restarted
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:

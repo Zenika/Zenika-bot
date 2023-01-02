@@ -48,8 +48,8 @@ nlu:
     - formateur svp
     - à la recherche d'un formateur
     - je cherche quelqu'un pour me former
-    
-   # - Qui sont les formateurs à [Bordeaux](agence)
+    - Qui, chez Zenika, possède cette compétence [keras](skill)   ?
+    - Qui sont les formateurs à [Bordeaux](agence)
 
 
 - intent: bot_challenge

@@ -5,21 +5,47 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
 language: fr
-  
+
 pipeline:
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
+  - name: "SpacyNLP"
+    model: "fr_core_news_md"
     case_sensitive: False
-  - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: char_wb
-    min_ngram: 1
-    max_ngram: 4
-  - name: DIETClassifier
-    epochs: 100
-    constrain_similarities: true
-  - name: EntitySynonymMapper
-  - name: "CRFEntityExtractor"
+  - name: "SpacyTokenizer"
+    # Flag to check whether to split intents
+    "intent_tokenization_flag": False
+    # Symbol on which intent should be split
+    "intent_split_symbol": "_"
+    # Regular expression to detect tokens
+    "token_pattern": None
+  #- name: RegexFeaturizer
+  #  case_sensitive: False
+  - name: LanguageModelFeaturizer
+    # Name of the language model to use
+    model_name: "bert"
+    # Pre-Trained weights to be loaded
+    model_weights: "rasa/LaBSE"  
+    #- name: CountVectorsFeaturizer
+    #  analyzer: char_wb
+    #  min_ngram: 1
+    #  max_ngram: 4
+    #- name: DIETClassifier
+    #  epochs: 100
+    #  constrain_similarities: true
+  - name: SklearnIntentClassifier
+    C: [1, 2, 5, 10, 20, 100]
+    # Specifies the kernel to use with C-SVM.
+    # This is used with the ``C`` hyperparameter in GridSearchCV.
+    kernels: ["linear"]
+    # Gamma parameter of the C-SVM.
+    "gamma": [0.1]
+    # We try to find a good number of cross folds to use during
+    # intent training, this specifies the max number of folds.
+    "max_cross_validation_folds": 5
+    # Scoring function used for evaluating the hyper parameters.
+    # This can be a name or a function.
+    "scoring_function": "f1_weighted"
+  #- name: EntitySynonymMapper
+  #- name: "CRFEntityExtractor"
   - name: RegexEntityExtractor
     case_sensitive: False
     use_lookup_tables: True
@@ -31,4 +57,5 @@ policies:
     epochs: 100
     batch_size: 50
     max_training_samples: 300
+    
  

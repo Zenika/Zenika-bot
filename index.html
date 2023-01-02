@@ -13,13 +13,15 @@
         
                     customData: { language: "fr" },
                     socketUrl: "http://localhost:5005",
-                    title: 'Zenika Bot'
+                    title: 'Zenika Bot',
+                    //storage:"session"
                   },
                   null
                 );
               }),
               t.insertBefore(e, t.firstChild);
           })();
+          localStorage.clear();
           </script>
     </body>
 </html>

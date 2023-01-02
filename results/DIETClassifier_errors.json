@@ -1,0 +1,418 @@
+[
+  {
+    "text": "Qui parle italien couramment ?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "italien",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "agence",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.6747834086418152,
+        "value": "parle",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "skill",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.7830291476885838,
+        "value": "italien",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 10,
+        "end": 17,
+        "value": "italien",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Qui peut me former à Singapore en kubernetes ?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 30,
+        "value": "Singapore",
+        "entity": "agence"
+      },
+      {
+        "start": 34,
+        "end": 44,
+        "value": "kubernetes",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 34,
+        "end": 44,
+        "confidence_entity": 0.7650513613625122,
+        "value": "kubernetes",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "agence",
+        "start": 21,
+        "end": 30,
+        "value": "Singapore",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 34,
+        "end": 44,
+        "value": "kubernetes",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Qui, chez Zenika, possède cette compétence keras   ?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 48,
+        "value": "keras",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.5294439196586609,
+        "value": "Zenika",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "skill",
+        "start": 43,
+        "end": 48,
+        "confidence_entity": 0.8932503821481221,
+        "value": "keras",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 43,
+        "end": 48,
+        "value": "keras",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "vba",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "vba",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.65351433763398,
+        "value": "vba",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 0,
+        "end": 3,
+        "value": "vba",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Une réference Azure à Paris?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "Azure",
+        "entity": "skill"
+      },
+      {
+        "start": 22,
+        "end": 27,
+        "value": "Paris",
+        "entity": "agence"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.8665569360756138,
+        "value": "Azure",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "agence",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.4745442977349979,
+        "value": "Paris",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "agence",
+        "start": 22,
+        "end": 27,
+        "value": "Paris",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 14,
+        "end": 19,
+        "value": "Azure",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Qui est la personne la plus compétente en Apache Kafka",
+    "entities": [
+      {
+        "start": 42,
+        "end": 54,
+        "value": "Apache Kafka",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 49,
+        "end": 54,
+        "confidence_entity": 0.992672860622406,
+        "value": "Kafka",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "skill",
+        "start": 42,
+        "end": 48,
+        "confidence_entity": 0.9210461404929103,
+        "value": "Apache",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 49,
+        "end": 54,
+        "confidence_entity": 0.9183415026752716,
+        "value": "Kafka",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 42,
+        "end": 54,
+        "value": "Apache Kafka",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "formateur java à Lille?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 14,
+        "value": "java",
+        "entity": "skill"
+      },
+      {
+        "start": 17,
+        "end": 22,
+        "value": "Lille",
+        "entity": "agence"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.801259458065033,
+        "value": "java",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "skill",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.892643310527209,
+        "value": "java",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "agence",
+        "start": 17,
+        "end": 22,
+        "confidence_entity": 0.5387085531622288,
+        "value": "Lille",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "agence",
+        "start": 17,
+        "end": 22,
+        "value": "Lille",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 10,
+        "end": 14,
+        "value": "java",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Qui peut m'aider en jira",
+    "entities": [
+      {
+        "start": 20,
+        "end": 24,
+        "value": "jira",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.9518037436413057,
+        "value": "jira",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 20,
+        "end": 24,
+        "value": "jira",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "un formateur en Cloud svp",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "Cloud",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.8220558460537623,
+        "value": "Cloud",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 16,
+        "end": 21,
+        "value": "Cloud",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Un contact pour apprendre C",
+    "entities": [
+      {
+        "start": 26,
+        "end": 27,
+        "value": "C",
+        "entity": "skill"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 26,
+        "end": 27,
+        "confidence_entity": 0.8403330640368027,
+        "value": "C",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 26,
+        "end": 27,
+        "value": "C",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Est ce qu'il y a un collaborateur fort en aws à l'agence de Nantes",
+    "entities": [
+      {
+        "start": 42,
+        "end": 45,
+        "value": "aws",
+        "entity": "skill"
+      },
+      {
+        "start": 60,
+        "end": 66,
+        "value": "Nantes",
+        "entity": "agence"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "skill",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.8767450458618428,
+        "value": "aws",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "agence",
+        "start": 60,
+        "end": 66,
+        "value": "Nantes",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "skill",
+        "start": 42,
+        "end": 45,
+        "value": "aws",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]
