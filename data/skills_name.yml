@@ -1,0 +1,377 @@
+version: "3.1"
+
+nlu:
+- lookup: skill
+  examples: |
+     - micronaute
+     - angular
+     - apache spark
+     - backbonejs
+     - ansible
+     - apache kafka
+     - aws
+     - azure
+     - c
+     - c++
+     - clean architecture
+     - clean code
+     - cloud
+     - continuous deployment
+     - continuous integration
+     - datadog
+     - ddd
+     - devops
+     - docker
+     - gcp
+     - git
+     - github
+     - go
+     - infrastructure as code
+     - intellij idea
+     - java ≥8
+     - jenkins
+     - jira
+     - junit 5
+     - kafka
+     - kafka streams
+     - kubernetes
+     - linux
+     - mockito
+     - mongodb
+     - mysql
+     - openstack
+     - ovhcloud
+     - packer
+     - postgresql
+     - python 3
+     - redis
+     - spring
+     - sql
+     - tdd
+     - terraform
+     - traefik
+     - vagrant
+     - vault
+     - vim
+     - vscode
+     - coaching devops
+     - formation
+     - circleci
+     - coaching craft
+     - flyway
+     - gestion de projet
+     - gestion d'équipe
+     - hadoop
+     - maker
+     - normalisation
+     - php
+     - prometheus
+     - reactjs
+     - sonar
+     - spring boot
+     - vuejs
+     - wordpress
+     - cucumber
+     - leafletjs
+     - node.js
+     - react native
+     - typescript
+     - agilité
+     - ci cd
+     - code review
+     - craftsmanship
+     - maven
+     - nosql
+     - rest
+     - scrum
+     - zeplin
+     - accelerate
+     - activemq
+     - agile coaching
+     - anglais
+     - apache pulsar
+     - bpmn
+     - c#
+     - camel
+     - cassandra
+     - clever cloud
+     - clojure
+     - cloud functions
+     - communication non violente
+     - confluence
+     - consulting
+     - cqrs
+     - design patterns
+     - elasticsearch
+     - elk
+     - enterprise architecture 
+     - event sourcing
+     - extreme programming
+     - facilitation
+     - firebase
+     - github actions
+     - gitlab ci
+     - gradle
+     - groovy
+     - haskell
+     - hibernate
+     - html
+     - java
+     - javascript
+     - jpa
+     - jsf
+     - jsp
+     - jvm
+     - kafka ops
+     - kanban
+     - keycloak
+     - kotlin
+     - ksqldb
+     - ktor
+     - lean
+     - lean startup
+     - lisp
+     - miro
+     - mob programming
+     - mural
+     - neo4j
+     - node
+     - pair programming
+     - problem solving
+     - programmation fonctionnelle
+     - quarkus
+     - refactoring
+     - scala
+     - spring batch
+     - spring cloud
+     - spring data
+     - spring reactor
+     - spring security
+     - tech lead
+     - tests
+     - unity
+     - zoom
+     - argocd
+     - container
+     - aws sagemaker
+     - azure machine learning
+     - bdd
+     - fastlane
+     - flutter
+     - google analytics 
+     - graphql
+     - ios
+     - mockk
+     - nestjs
+     - netlify
+     - nextjs
+     - python
+     - ruby
+     - sbt
+     - swagger
+     - swiftui
+     - vert.x
+     - xcode
+     - bash
+     - kubernetes admin
+     - elastic observability
+     - junit
+     - macos
+     - accessibilité
+     - adobe xd
+     - design
+     - design sprint
+     - design thinking
+     - figma
+     - invision
+     - klaxoon
+     - motion design
+     - serious game
+     - ui
+     - liquibase
+     - vuejs 2
+     - vuejs 3
+     - angularjs
+     - bootstrap
+     - css
+     - deno
+     - expressjs
+     - frontend
+     - micro frontend
+     - owasp
+     - pwa
+     - rollup
+     - rust
+     - sass
+     - serverless
+     - sveltejs
+     - webassembly
+     - web components
+     - webpack
+     - espagnol 
+     - joomla
+     - jquery
+     - prince2
+     - product management
+     - product owner
+     - safe
+     - scaled agile
+     - seo
+     - sketch
+     - typeform
+     - ux
+     - web flow
+     - rxjs
+     - pandas
+     - angular 8+
+     - chaos engineering
+     - chef
+     - coaching agile
+     - data science
+     - dataviz
+     - devsecops
+     - green it
+     - heroku
+     - java ≤7
+     - jest
+     - management 3.0
+     - molecule
+     - psychologie positive
+     - puppet
+     - rabbitmq
+     - sécurité
+     - svn
+     - uml
+     - dialogflow
+     - tensorflow
+     - meilisearch
+     - cynefin
+     - scrumban
+     - scrum master
+     - site reliability engineering
+     - dart
+     - expo
+     - pentest
+     - vps
+     - co-design
+     - symfony
+     - process com
+     - python 2
+     - recrutement
+     - thanos
+     - transact-sql
+     - android
+     - bikablo
+     - design system
+     - framer
+     - storybook
+     - zero height
+     - angular 7
+     - coaching professionnel
+     - dynatrace
+     - facilitation graphique
+     - fluentbit
+     - grafana
+     - intégration continue
+     - istio
+     - kubernetes dev
+     - service mesh
+     - solr
+     - helm
+     - k3s
+     - elastic stack
+     - spark
+     - plantuml
+     - angular 8
+     - angular 9
+     - electron
+     - http4k
+     - .net
+     - nexus
+     - objective-c
+     - openshift
+     - rancher
+     - swift
+     - bidon
+     - ia
+     - ionic 6
+     - vite
+     - atdd
+     - play 2
+     - rxjava
+     - droneci
+     - less
+     - nightwatch
+     - playwright
+     - ionic
+     - machine learning
+     - .net core
+     - quasar
+     - jamstack
+     - marvel
+     - r
+     - microsoft access
+     - gatsbyjs
+     - lego serious play
+     - liberating structures
+     - mercurial
+     - salt(stack)
+     - velero
+     - graalvm
+     - cypress
+     - fastify
+     - perl
+     - adobe experience manager aem
+     - d3js
+     - italien
+     - svg
+     - protractor
+     - coldfusion
+     - d.i.s.c.
+     - pnl
+     - solid
+     - pmi
+     - analyse transactionnelle
+     - capital psychologique
+     - executive coaching
+     - host leadership
+     - innovation game
+     - résilience
+     - axure
+     - vba
+     - solution focus
+     - system thinking 
+     - xray
+     - kotlin multiplatform
+     - rxswift
+     - nuxtjs
+     - account management
+     - elixir
+     - elm
+     - stenciljs
+     - fusion 360
+     - kubespray
+     - keras
+     - litelement
+     - lucene
+     - scikit-learn
+     - dvc
+     - pytorch
+     - emberjs
+     - vhdl
+     - webrtc
+     - appreciative inquiry
+     - pijul
+     - snowpack
+     - catchpoint
+     - concept app
+     - czech
+     - remix
+     - stylus
+     - kotest
+     - micronaut
+     - strikt
+     - polymer
+     - kubeflow
+     - mlflow
+ 
